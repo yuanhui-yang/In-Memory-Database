@@ -62,6 +62,7 @@ class Table {
 
   void Print() {
     string output = JoinStringVector(column_names_);
+    output += '\n';
     for (size_t row_index = 0; row_index < data_.size(); ++row_index) {
       output += JoinStringVector(data_[row_index]);
       output += "\n";
